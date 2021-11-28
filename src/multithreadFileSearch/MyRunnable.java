@@ -17,11 +17,6 @@ public class MyRunnable implements Runnable{
 	}
 	
 	public void run() {
-//			for (int i = 0; i < 10; i++) {
-//				Date now = new Date();
-//				System.out.println(now + " " + msg);
-//				Thread.sleep(1000);
-//			}
 			File inputFile = new File(myFile);
 			try (Scanner in = new Scanner(inputFile)){
 				System.out.println("thread executing");
@@ -49,7 +44,6 @@ public class MyRunnable implements Runnable{
 							if (matchCounter == stLen) { //match found
 								System.out.println(myFile + ": line num: " + lineNum + " " + line);
 							}
-							//System.out.println(line);
 						}
 					}
 					
