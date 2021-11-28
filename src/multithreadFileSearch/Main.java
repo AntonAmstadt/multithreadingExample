@@ -1,7 +1,5 @@
 package multithreadFileSearch;
 
-//import java.util.concurrent.ExecutorService;
-//import java.util.concurrent.Executors;
 import java.util.ArrayList;
 
 public class Main {
@@ -21,35 +19,5 @@ public class Main {
 		for(int i = 0; i < ts.size(); i++) {
 			ts.get(i).start();
 		}
-		
-		//START NOTES
-//		Runnable r = new MyRunnable("ant");
-//		Runnable r2 = new MyRunnable("john");
-		
-		//Running threads by creating thread objects and moving them into start portion of thread life cycle
-		//Java Thread life cycle: New, Active, Blocked/Waiting, Timed Waiting, Terminated
-//		Thread t = new Thread(r);
-//		Thread t2 = new Thread(r2);
-//		t.start();
-//		t2.start();
-		
-		//Thread Pools should be used when there are potentially a large number of threads that could
-		//run simultaneously. Used especially in database and web servers
-//		int maxThreads = 100;
-//		ExecutorService pool = Executors.newFixedThreadPool(maxThreads);
-//		pool.execute(r);
-//		pool.execute(r2);
-		
-		//what the code looks like without the arraylists 
-//		MyRunnable r = new MyRunnable(args[1], args[0]);
-//		MyRunnable r1 = new MyRunnable(args[2].txt", args[0]);
-//		MyRunnable r2 = new MyRunnable(args[3].txt", args[0]);
-//		Thread t = new Thread(r);
-//		Thread t1 = new Thread(r1);
-//		Thread t2 = new Thread(r2);
-//		t.start();
-//		t2.start();
-//		t1.start();
-		//END NOTES
 	}
 }
